@@ -1,6 +1,7 @@
 {
     // ...
     "build": { "dockerfile": "Dockerfile" },
+    "postCreateCommand": "pip3 install --user mysql-connector-python",
     "overrideCommand": true,
     "runArgs": [
         "--cap-add=SYS_PTRACE",
