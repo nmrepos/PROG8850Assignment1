@@ -1,4 +1,6 @@
 #!/bin/bash
+# Make MySQL listen on TCP
+sed -i 's/^bind-address.*/bind-address = 127.0.0.1/' /etc/mysql/mysql.conf.d/mysqld.cnf
 
 # Start MySQL in safe mode to allow setup
 service mysql start
